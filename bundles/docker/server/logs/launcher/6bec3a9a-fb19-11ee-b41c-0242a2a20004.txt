@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/deploy/server/venv/bin/trame-app", line 5, in <module>
+    from trame_app.app import main
+  File "/deploy/server/venv/lib/python3.9/site-packages/trame_app/app/__init__.py", line 1, in <module>
+    from .main import main
+  File "/deploy/server/venv/lib/python3.9/site-packages/trame_app/app/main.py", line 1, in <module>
+    from .core import MyTrameApp
+  File "/deploy/server/venv/lib/python3.9/site-packages/trame_app/app/core.py", line 21, in <module>
+    class MyTrameApp:
+  File "/deploy/server/venv/lib/python3.9/site-packages/trame_app/app/core.py", line 47, in MyTrameApp
+    @state.change("scalar_selector", "style_selector", "show_edges")
+AttributeError: 'property' object has no attribute 'change'
